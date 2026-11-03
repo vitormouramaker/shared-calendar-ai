@@ -1,0 +1,30 @@
+{
+  "name": "calendo-api",
+  "version": "1.0.0",
+  "description": "API do Calendo: agenda compartilhada com assistente de IA (Node.js + Express + PostgreSQL)",
+  "main": "src/app.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "db:init": "node scripts/init-db.js",
+    "seed:demo": "node scripts/seed-demo.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^8.0.2",
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
